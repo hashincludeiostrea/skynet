@@ -23,7 +23,7 @@ class color:
 
 def Encode_Passwrod_Hash():
     os.system("clear")
-    print(color.UNDERLINE + " \t\t\t\t\tThe wordlist is (p.txt)" + color.END)
+   
     Passwrod_hash = input(color.NOTICE + "enter passwrod hash => " + color.END)
     if Passwrod_hash == "":
         speed_Encode_Passwrod_Hash()
@@ -41,7 +41,7 @@ def Encode_Passwrod_Hash():
     for Word in Open_wordlist:
         encode_Passwrod = Word.encode('utf-8')
         disget = hashlib.md5(encode_Passwrod.strip()).hexdigest()
-        find = 1
+        find = 1 
 
         print(color.OKGREEN + "[" + color.END + "+" + color.OKGREEN + "]" + color.END + color.RED + color.RED + "try in Password" + color.END + color.NOTICE + " =>" + color.END + color.OKGREEN + Word + color.END )
         sleep(1)
@@ -68,7 +68,7 @@ def Encode_Passwrod_Hash():
 
 def speed_Encode_Passwrod_Hash():
     os.system("clear")
-    print(color.UNDERLINE + " \t\t\t\t\tThe wordlist is (p.txt)" + color.END)
+    
     Passwrod_hash = input(color.NOTICE + "enter passwrod hash => " + color.END)
     if Passwrod_hash == "":
         speed_Encode_Passwrod_Hash()
